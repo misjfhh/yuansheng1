@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户注册</title>
+    <link rel="stylesheet" type="text/css" href="css/amazeui.css"/>
+    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/amazeui.js" type="text/javascript" charset="utf-8"></script>
+    <style>/*样面标签*/
+        body {
+            font-family: Arial, sans-serif;/*指定元素文本的字体*/
+            margin: 0;  /*控制相邻元素的间距*/
+            padding: 0;  /*控制元素与边框之间的距离*/
+            background-image:url("2.jpg");
+            color:#000000;
+            text-align:left;
+            padding: 0 100px;
+  </figure>
+
+        }
+         header {
+            background-image:url('8.jpg');
+            color:#FFFFFF;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .container {    /*容器*/
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .message {
+            text-align: center;
+            margin-top: 20px;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>用户注册</h2>
+        <form action="" method="post">
+            <label for="username">用户名：</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">邮箱：</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">密码：</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm_password">确认密码：</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+
+            <input type="submit" value="注册">
+        </form>
+        <p class="message">已有账号？立即登录</p >
+    </div>
+</body>
+</html>
